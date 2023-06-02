@@ -12,6 +12,10 @@ const MuiText = () => {
     const handlePasswordVisibility=()=>{
         setShowPassword(!showPassword);
     }
+    const [error, setError] = useState(false);
+    const handleFocus = () => {
+        setError(true);
+    };
     return (
         <>
             <Stack direction='row' spacing={3} justifyContent={'center'} paddingTop={5}>
@@ -24,7 +28,7 @@ const MuiText = () => {
                 <TextField label="password" variant="outlined" size="small" type={!showPassword? "password" : "text"}
                     color="secondary"
                     value={value}
-                    error={!value}
+                    error={error&&!value}
                     helperText={value ? "do not share your password with others" : 'required'}
                     onChange={handleChange}
                     InputProps={{
@@ -34,6 +38,7 @@ const MuiText = () => {
                             </IconButton>
                         </InputAdornment>
                     }}
+                    onFocus={handleFocus}
                 />
             </Stack>
             <Stack direction='row' spacing={3} justifyContent={'center'} paddingTop={2}>
