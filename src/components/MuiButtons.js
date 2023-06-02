@@ -45,7 +45,6 @@ const MuiButtons=()=> {
                         <Button>right</Button>
                     </ButtonGroup>
                 </Stack>
-
                 <Stack direction={'row'} justifyContent={'center'} style={{ paddingTop: '2rem' }}>
                     <ToggleButtonGroup
                         aria-label='text format'
