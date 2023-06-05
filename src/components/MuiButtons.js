@@ -11,7 +11,7 @@ const MuiButtons=()=> {
     const handleChange = (changeEvent, value) => {
         setFormats(value);
     };
-    console.log(formats);
+    console.log(formats);    //we gill get the value from the button toggle group, we will get single value because of exclusive attribute
 
     return (
         <>
