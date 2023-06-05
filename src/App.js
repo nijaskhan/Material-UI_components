@@ -14,6 +14,7 @@ import MuiSpeedDial from './components/MuiSpeedDial';
 import MuiBottomNav from './components/MuiBottomNav';
 import MuiListing from './components/MuiListing';
 import './App.css';
+import MuiChip from './components/MuiChip';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <MuiLayout />
       <MuiCard />
       <MuiListing />
+      <MuiChip />
       <MuiAccordian />
       <MuiSpeedDial />
       <MuiBottomNav />
