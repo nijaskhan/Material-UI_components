@@ -3,7 +3,6 @@ import MuiButtons from './components/MuiButtons';
 import DropDown from './components/DropDown';
 import MuiRadio from './components/MuiRadio';
 import MuiCheckbox from './components/MuiCheckbox';
-import './App.css';
 import MuiAutocomplete from './components/MuiAutocomplete';
 import MuiLayout from './components/MuiLayout';
 import MuiCard from './components/MuiCard';
@@ -13,6 +12,8 @@ import MuiBreadcrumps from './components/MuiBreadcrumps';
 import MuiDrawer from './components/MuiDrawer';
 import MuiSpeedDial from './components/MuiSpeedDial';
 import MuiBottomNav from './components/MuiBottomNav';
+import MuiListing from './components/MuiListing';
+import './App.css';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <MuiAutocomplete />
       <MuiLayout />
       <MuiCard />
+      <MuiListing />
       <MuiAccordian />
       <MuiSpeedDial />
       <MuiBottomNav />
