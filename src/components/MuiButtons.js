@@ -16,7 +16,7 @@ const MuiButtons=()=> {
     return (
         <>
             <Stack direction='row' display={'block'} >
-                <Stack direction={'row'} justifyContent={'center'} paddingBottom={6}>
+                <Stack direction={'row'} justifyContent={'center'} p={6}>
                     <Typography variant='h2' gutterBottom sx={{textDecorationLine: 'underline'}}>
                         Testing Material UI
                     </Typography>
