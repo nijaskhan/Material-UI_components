@@ -13,28 +13,54 @@ import MuiDrawer from './components/MuiDrawer';
 import MuiSpeedDial from './components/MuiSpeedDial';
 import MuiBottomNav from './components/MuiBottomNav';
 import MuiListing from './components/MuiListing';
-import './App.css';
 import MuiChip from './components/MuiChip';
+import MuiTable from './components/MuiTable';
+import MuiAlert from './components/MuiAlert';
+import MuiSnakbar from './components/MuiSnakbar';
+import MuiDialogue from './components/MuiDialogue';
+import MuiProgress from './components/MuiProgress';
+import MuiLoadingBtn from './components/MuiLoadingBtn';
+import MuiDateTime from './components/MuiDateTime';
+import MuiTabs from './components/MuiTabs';
+import { createTheme, colors, ThemeProvider } from '@mui/material';
+import './App.css';
 
 function App() {
+  const theme = createTheme({
+    palette: {
+      secondary: {
+        main: colors.deepPurple[700]
+      }
+    }
+  })
   return (
     <>
-      <MuiNavbar />
-      <MuiDrawer />
-      <MuiBreadcrumps />
-      <MuiButtons />
-      <MuiText />
-      <DropDown />
-      <MuiRadio />
-      <MuiCheckbox />
-      <MuiAutocomplete />
-      <MuiLayout />
-      <MuiCard />
-      <MuiListing />
-      <MuiChip />
-      <MuiAccordian />
-      <MuiSpeedDial />
-      <MuiBottomNav />
+      <ThemeProvider theme={theme}>
+        <MuiNavbar />
+        <MuiDrawer />
+        <MuiBreadcrumps />
+        <MuiButtons />
+        <MuiText />
+        <DropDown />
+        <MuiRadio />
+        <MuiCheckbox />
+        <MuiAutocomplete />
+        <MuiLayout />
+        <MuiCard />
+        <MuiListing />
+        <MuiChip />
+        <MuiTable />
+        <MuiAlert />
+        <MuiSnakbar />
+        <MuiDialogue />
+        <MuiProgress />
+        <MuiLoadingBtn />
+        <MuiDateTime />
+        <MuiTabs />
+        <MuiAccordian />
+        <MuiSpeedDial />
+        <MuiBottomNav />
+      </ThemeProvider>
     </>
   );
 }
