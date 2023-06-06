@@ -12,7 +12,7 @@
 
 <h4>To get started, clone this repository and install the dependencies: </h4>
 
-        git clone https://github.com/your-username/material-ui-components-workouts.git
+        git clone https://github.com/nijaskhan/Material-UI_components.git
         
         cd Material-UI_components
         
